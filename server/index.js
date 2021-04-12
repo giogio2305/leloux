@@ -29,15 +29,6 @@ let router = require('./router.js');
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
-const cors = require('cors')
-const corsOptions = {
-  origin: 'http://localhost:3000',
-  optionsSuccessStatus: 200,
-  credentials: true,
-}
-app.use(cors(corsOptions));
-
-
 
 app.use(session({
   key: "id",
