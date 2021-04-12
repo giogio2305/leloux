@@ -19,7 +19,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
-db.Vehicules = require('../lib/Vehicules.model.js')(sequelize, Sequelize);
+db.Vehicules = require('../lib/vehicules.model.js')(sequelize, Sequelize);
 db.Reparateurs = require('../lib/reparateurs.model.js')(sequelize, Sequelize);
 db.Interventions = require('../lib/interventions.model.js')(sequelize, Sequelize);
 db.Workers = require('../lib/workers.model.js')(sequelize, Sequelize);
