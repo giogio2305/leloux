@@ -2,7 +2,7 @@ const env = {
     database: 'nr1yMXpPIx',
     username: 'nr1yMXpPIx',
     password: '12PoO0Gpxn',
-    host: 'localhost',
+    host: 'remotemysql.com',
     dialect: 'mysql',
     pool: {
       max: 5,
