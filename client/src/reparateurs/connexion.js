@@ -21,7 +21,7 @@ function Rpc() {
   console.log(repa.value);
   console.log(code.value);
 
-   await Axios.post("http://localhost:3000/login", {
+   await Axios.post("http://localhost:3001/login", {
       repa: repa.value,
       code: code.value,
   }).then((response) =>{
