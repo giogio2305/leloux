@@ -19,7 +19,7 @@ const jwt = require('jsonwebtoken');
 
 app.use(express.json());
 
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
 const Vehicules = db.Vehicules;
 const Reparateurs = db.Reparateurs;
 const Interventions = db.Interventions;
