@@ -22,7 +22,7 @@ function Ec() {
    console.log(emp.value);
    console.log(code.value);
  
-    await Axios.post("https://leloux.herokuapp.com//logine", {
+    await Axios.post("https://leloux.herokuapp.com/logine", {
        emp: emp.value,
        mail: mail.value,
        code: code.value,
