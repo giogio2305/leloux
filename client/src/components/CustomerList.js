@@ -46,7 +46,7 @@ const tableIcons = {
   };
   const tableRef = React.createRef();
   const api = axios.create({
-    baseURL: `http://localhost:5000/crud`
+    baseURL: `https://leloux.herokuapp.com/crud`
   });
 
 function CustomerList() {
@@ -92,7 +92,7 @@ function CustomerList() {
       
           if(errorList.length < 1){
 
-            await fetch('http://localhost:5000/crud/customer', {
+            await fetch('https://leloux.herokuapp.com/crud/customer', {
               method: 'PUT',
               headers: {
                 'Accept': 'application/json',
@@ -137,7 +137,7 @@ function CustomerList() {
           }*/
       
           if(errorList.length < 1){ //no error
-            await fetch('http://localhost:5000/crud/customer', {
+            await fetch('https://leloux.herokuapp.com/crud/customer', {
               method: 'POST',
               headers: {
                 'Accept': 'application/json',
@@ -167,7 +167,7 @@ function CustomerList() {
         }
       
         const handleRowDelete = (oldData, resolve) => {
-          fetch(`http://localhost:5000/crud/customer/${oldData.id}`, {
+          fetch(`https://leloux.herokuapp.com/crud/customer/${oldData.id}`, {
             method: 'DELETE',
             headers: {
               'Accept': 'application/json',
