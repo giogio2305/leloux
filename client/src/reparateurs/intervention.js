@@ -15,7 +15,7 @@ class Int extends Component {
     
       async componentDidMount() {
         if (this.props.match.params.id !== 'new') {
-          const customer = await(await fetch(`http://localhost:5000/crud/uintervention/${this.props.match.params.id}`)).json();
+          const customer = await(await fetch(`https://leloux.herokuapp.com/crud/uintervention/${this.props.match.params.id}`)).json();
           const data = customer;
           this.setState({item: data});
           
