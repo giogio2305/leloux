@@ -32,10 +32,9 @@ function Ec() {
      }else{
        console.log(response.data.result);
        localStorage.setItem('empauth', JSON.stringify(response.data));
-       setMsg("Vous etes connecte clicquez" + <Link exact to='/workers/vehicules'>ici</Link>);
-       history.push('/workers/vehicules');
-       if(localStorage.getItem("empauth")){
-       
+       //history.push('/workers/vehicules');
+       if(response.data.result){
+       return <Redirect to="/workers/vehicules" />;
        }
      }
    });
